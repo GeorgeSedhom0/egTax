@@ -1,0 +1,301 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  font-size: 1.35em;
+  color: white;
+  font-family: "Almarai light";
+  margin: 0px;
+  user-select: none;
+}
+#header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  right: 0px;
+  transition: top 1s;
+}
+.button {
+  margin: 0.25em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  user-select: none;
+  transition: ease-in-out 0.25s;
+}
+.button:hover {
+  color: #35ab7f;
+  transition: ease-in-out 0.25s;
+  cursor: pointer;
+}
+#logo {
+  width: 5.5em;
+  margin: 0.5em;
+  display: block;
+  transition: margin-right 1s, margin-left 1s;
+}
+
+.mainMenuButtonC {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #35ab7f;
+  z-index: 2;
+}
+.topHeadMenu {
+  padding: 0.2em;
+  color: white;
+  background-color: transparent;
+  font-size: 0.75em;
+  margin: 0.25em;
+  cursor: pointer;
+  display: block;
+  transition: background-color 1s;
+}
+#nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  transition: background-color 1s;
+}
+#mainContent {
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin-top: 8em;
+  border-radius: 2em;
+  padding: 1em;
+  width: 75%;
+  height: 100vh;
+}
+.input {
+  font-size: 30px;
+  border-radius: 10px;
+  width: 30vw;
+  margin: 2vw;
+  background-color: rgb(243, 243, 243);
+  color: black;
+}
+.output {
+  width: 40%;
+  margin: 4%;
+  font-size: 1em;
+  padding: 0.25em;
+  border-radius: 0.15em;
+  border: #35ab7f solid 2px;
+}
+.outputNumber {
+  font-size: 1.15em;
+  font-weight: bold;
+  user-select: all;
+}
+#mobileMenu {
+  display: none;
+}
+#mobileSideBar {
+  height: 100vh;
+  width: 60vw;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  background-color: #35ab7f;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 0.15em;
+}
+.lightLine {
+  background-color: black;
+  width: 70%;
+  height: 0.7px;
+}
+#click {
+  color: #35ab7f;
+  width: 70%;
+}
+@media only screen and (max-width: 600px) {
+  #mobileSideBar {
+    height: 100vh;
+    width: 60vw;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    right: -500px;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+    color: black;
+    transition: ease-in-out 0.5s;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  body {
+    background-color: lightgray;
+    font-size: 1em;
+    color: white;
+    font-family: "Almarai light";
+  }
+  #header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    right: 0px;
+    transition: top 1s;
+  }
+  .button {
+    margin: 0.15em;
+    border-radius: 0.25em;
+    padding: 0.25em;
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    transition: ease-in-out 0.25s;
+  }
+  .button:hover {
+    color: #35ab7f;
+    transition: ease-in-out 0.25s;
+  }
+  #logo {
+    height: 8vh;
+    width: auto;
+    padding: 0.5em;
+    margin: 0.25vh;
+    display: block;
+    transition: margin-right 1s, margin-left 1s;
+  }
+
+  .mainMenuButtonC {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #35ab7f;
+    display: none;
+  }
+  .topHeadMenu {
+    padding: 0.2em;
+    color: black;
+    background-color: transparent;
+    font-size: 1.5em;
+    margin: 0.5em;
+    cursor: pointer;
+    display: block;
+    transition: background-color 1s;
+  }
+  #nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: auto;
+    height: auto;
+    transition: background-color 1s;
+  }
+  #mainContent {
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 1.2em;
+    padding: 0.55em;
+    width: 85%;
+    height: auto;
+    font-size: large;
+  }
+  .input {
+    font-size: 0.85em;
+    border-radius: 0.15em;
+    width: 80%;
+    height: 2em;
+    background-color: rgb(243, 243, 243);
+    color: black;
+  }
+  .output {
+    width: max-content;
+    margin: 4%;
+    font-size: 1em;
+    padding: 0.25em;
+    border-radius: 0.15em;
+    border: #35ab7f solid 2px;
+  }
+  .outputNumber {
+    font-size: 1.15em;
+    font-weight: bold;
+    user-select: all;
+  }
+  #mobileMenu {
+    display: block;
+    color: black;
+    background-color: #35ab7f;
+    width: 2.5em;
+    height: 2.5em;
+    position: absolute;
+    left: 80vw;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mobileMenuIcon {
+    background-color: white;
+    border-radius: 25%;
+    width: 70%;
+    height: 12%;
+    margin: 6.5%;
+  }
+  #sideMenuBack {
+    display: block;
+    width: 8vw;
+    height: 4vh;
+    margin-top: 3.7vh;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #sideMenuBack1 {
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 12%;
+    border-radius: 5%;
+  }
+  #arrow {
+    width: 0;
+    height: 0;
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-top: 4vw solid #555;
+    position: relative;
+    top: 3.5vh;
+    transition: ease-in-out 0.35s;
+  }
+  .mobileMainMenuS.h {
+    position: relative;
+    top: 0px;
+    transition: ease-in-out 0.35s;
+  }
+}

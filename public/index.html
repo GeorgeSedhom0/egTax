@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'> -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>حساب ضريبة القيمة المضافة</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="حساب ضريبة القيمة المضافة لمعرفة كم تحتاج لشحن الباقة "
+    />
+    <meta property="og:locale" content="ar_EG" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="اعرف فيمة الرصيد مقابل الاموال" />
+    <meta
+      property="og:description"
+      content="حساب ضريبة القيمة المضافة لمعرفة كم تحتاج لشحن الباقة"
+    />
+    <meta property="og:url" content="https://eg-tax.gmk2tech.com/" />
+    <meta property="og:site_name" content="Gmk2Tax-caclues" />
+    <meta name="theme-color" content="#ee5b3e" />
+    <!-- <script defer src="/__/firebase/9.6.6/firebase-storage-compat.js"></script>
+        <script defer src="/__/firebase/9.6.6/firebase-analytics-compat.js"></script> -->
+  </head>
+  <body>
+    <div id="mobileSideBar">
+      <div
+        style="
+          width: 100%;
+          background-color: white;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row;
+          flex-wrap: wrap;
+          z-index: 5;
+        "
+      >
+        <div id="sideMenuBack">
+          <div id="sideMenuBack1"></div>
+        </div>
+
+        <div class="topHeadMenu" id="click">القائمة الرئيسية</div>
+        <div id="arrow"></div>
+
+        <div class="lightLine"></div>
+      </div>
+      <div class="mobileMainMenuS h">
+        <a class="topHeadMenu"> اتصل بنا </a>
+        <a class="topHeadMenu"> الخصوصية </a>
+        <div class="lightLine"></div>
+        <br />
+
+        <a href="" class="topHeadMenu">حساب ضريبة القيمة المضافة</a>
+        <a href="https://www.gmk2tech.com/" class="topHeadMenu"
+          >المدونة الرئيسية</a
+        >
+      </div>
+    </div>
+    <div id="header">
+      <div class="mainMenuButtonC">
+        <a class="topHeadMenu"> القائمة الرئيسية </a>
+        <a class="topHeadMenu"> اتصل بنا </a>
+        <a class="topHeadMenu"> الخصوصية </a>
+      </div>
+      <div id="nav">
+        <img src="Gmk2Calculus.png" id="logo" />
+        <div id="mobileMenu">
+          <div class="mobileMenuIcon"></div>
+          <div class="mobileMenuIcon"></div>
+          <div class="mobileMenuIcon"></div>
+        </div>
+        <div
+          class="mainMenuButtonC"
+          style="background-color: #ffffff00; width: fit-content"
+        >
+          <a href="" class="button">حساب ضريبة القيمة المضافة</a>
+          <a href="https://www.gmk2tech.com/" class="button"
+            >المدونة الرئيسية</a
+          >
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; width: 100vw">
+      <div id="mainContent" style="color: black">
+        <h4>قم بكتابة سعر المنتج النهائى او الاصلى لمعرفة باقى المعلومات</h4>
+        <input
+          type="number"
+          id="userInputB"
+          class="input"
+          placeholder="السعر بدون ضريبة"
+        />
+        <input
+          type="number"
+          id="userInputA"
+          class="input"
+          placeholder="السعر بعد الضريبة"
+        />
+        <br />
+        <br />
+
+        <a class="button" id="submit" style="border: black 1px solid">
+          حساب الضريبة
+        </a>
+
+        <br />
+        <br />
+        <br />
+        <div
+          style="
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            user-select: text;
+          "
+        >
+          <div class="output">
+            السعر قبل الضريبة
+            <span id="userOutputB" class="outputNumber">0.00</span>
+          </div>
+          <div class="output">
+            السعر بعد الضريبة
+            <span id="userOutputA" class="outputNumber">0.00</span>
+          </div>
+          <br />
+          <div class="output">
+            الضريبة
+            <span id="userOutput" class="outputNumber">0.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <footer>جميع الحقوق محفوظة Gmk2tech</footer>
+  </body>
+</html>
